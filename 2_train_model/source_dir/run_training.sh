@@ -19,7 +19,8 @@ python model_main_tf2.py \
     --num_train_steps ${NUM_TRAIN_STEPS} \
     --num_workers ${NUM_WORKERS} \
     --sample_1_of_n_eval_examples ${SAMPLE_1_OF_N_EVAL_EXAMPLES} \
-    --alsologtostderr
+    --alsologtostderr \
+    --checkpoint_every_n 20
 
 echo "==EVALUATING THE MODEL=="
 python model_main_tf2.py \
